@@ -3,7 +3,17 @@ import Layout from '../components/Layout';
 
 function Home() {
   return <div>
-      <Layout><h1>Home Page</h1></Layout>
+      <Layout>
+          <div>
+              <div className='h-screen bg-theme'>
+
+                <div className='grid md:grid-cols-1 grid-cols-2'>
+                    
+                </div>
+
+              </div>
+          </div>
+      </Layout>
   </div>;
 }
 
