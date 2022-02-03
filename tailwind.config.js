@@ -8,7 +8,8 @@ module.exports = {
         theme : '#2A2A2A'
       },
       fontFamily : {
-        robo : ['Roboto', 'sans-serif']
+        robo : ['Roboto', 'sans-serif'],
+        pop : ['Poppins', 'sans-serif']
       }
     },
     screens: {
