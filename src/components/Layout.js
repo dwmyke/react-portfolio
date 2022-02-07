@@ -8,7 +8,7 @@ function Layout({children}) {
   <div>
       <Header />
 
-      <div className=' font-pop'>
+      <div className='content font-pop'>
           {children}
       </div>
 
