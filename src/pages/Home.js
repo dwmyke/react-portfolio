@@ -4,6 +4,7 @@ import Lottie from "lottie-react";
 import designerAnimation from '../lottie/designer.json'
 import videoProductionAnimation from '../lottie/video-production.json'
 import editorAnimation from '../lottie/editor.json'
+import graphicAnimation from '../lottie/graphic.json'
 import {
   MdVideoSettings,
   MdVideoCameraBack,
@@ -119,6 +120,53 @@ function Home() {
               </div>
 
               </div>
+
+               {/* Graphic Designer */}
+
+               <div className='my-20'>
+
+<div className='text-center h-52 bg-blue-500'>
+  <h1 className='text-white font-bold text-4xl py-10'>Graphic Designer</h1>
+</div>
+
+<div className='md:mx-5 mx-32 shadow-2xl bg-gray-50 -mt-20 rounded-xl hover:bg-green-600 hover:text-white'>
+<div className='h-96'>
+<Lottie className="h-full" animationData={graphicAnimation} loop='true'/>
+</div>
+
+<div className='grid md:grid-cols-1 grid-cols-3 p-12 mx-5'>
+
+ <div className='text-left'>
+ <h1 className='text-xl font-bold my-2'>Software Used</h1>
+ <hr />
+ <p className='font-semibod my-1'>Adobe Photoshop</p>
+ <p className='font-semibod my-1'>Adobe After Effects</p>
+ <p className='font-semibod my-1'>Adobe Illustrator</p>
+ <p className='font-semibod my-1'>Autodesk Maya</p>
+ </div>
+
+ <div className='text-center'>
+ <h1 className='text-xl font-bold my-2'>Techniques</h1>
+ <hr />
+ <p className='font-semibod my-1'>Sketching & Painting</p>
+ <p className='font-semibod my-1'>Photo Editing</p>
+ <p className='font-semibod my-1'>Motion Graphics & Typography</p>
+ <p className='font-semibod my-1'>Animation</p>
+ </div>
+
+ <div className='text-right'>
+ <h1 className='text-xl font-bold my-2'>Formats</h1>
+ <hr />
+ <p className='font-semibod my-1'>Posters, Flyers, and Media Inserts</p>
+ <p className='font-semibod my-1'>Logos, Titles, and Credits</p>
+ <p className='font-semibod my-1'>Social Media Banners</p>
+ <p className='font-semibod my-1'>Website Assets</p>
+ </div>
+
+</div>
+</div>
+
+</div>
 
 
           </div>
