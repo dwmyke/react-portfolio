@@ -5,6 +5,7 @@ import designerAnimation from '../lottie/designer.json'
 import videoProductionAnimation from '../lottie/video-production.json'
 import editorAnimation from '../lottie/editor.json'
 import graphicAnimation from '../lottie/graphic.json'
+import techAnimation from '../lottie/technical.json'
 import {
   MdVideoSettings,
   MdVideoCameraBack,
@@ -161,6 +162,52 @@ function Home() {
  <p className='font-semibod my-1'>Logos, Titles, and Credits</p>
  <p className='font-semibod my-1'>Social Media Banners</p>
  <p className='font-semibod my-1'>Website Assets</p>
+ </div>
+
+</div>
+</div>
+
+</div>
+
+{/* Technician */}
+
+<div className='my-20'>
+
+<div className='text-center h-52 bg-yellow-500'>
+  <h1 className='text-white font-bold text-4xl py-10'>Technical Experience</h1>
+</div>
+
+<div className='md:mx-5 mx-32 shadow-2xl bg-gray-50 -mt-20 rounded-xl hover:bg-red-700 hover:text-gray-300'>
+<div className='h-96'>
+<Lottie className="h-full" animationData={techAnimation} loop='true'/>
+</div>
+
+<div className='grid md:grid-cols-1 grid-cols-3 p-12 mx-5'>
+
+ <div className='text-left'>
+ <h1 className='text-xl font-bold my-2'>Master Control Operator</h1>
+ <hr />
+ <p className='font-semibod my-1'>KOB-TV</p>
+ <p className='font-semibod my-1'>REELZ Channel</p>
+ <p className='font-semibod my-1'>ThisTV</p>
+ <p className='font-semibod my-1'>KRQE - Acme Television</p>
+ </div>
+
+ <div className='text-center'>
+ <h1 className='text-xl font-bold my-2'>IT & Helpdesk</h1>
+ <hr />
+ <p className='font-semibod my-1'>Nike World Headquarters</p>
+ <p className='font-semibod my-1'>Gateway, Inc.</p>
+ <p className='font-semibod my-1'>The University of New Mexico</p>
+ </div>
+
+ <div className='text-right'>
+ <h1 className='text-xl font-bold my-2'>Film & Television</h1>
+ <hr />
+ <p className='font-semibod my-1'>Swicthboard Operator</p>
+ <p className='font-semibod my-1'>Camera Operator</p>
+ <p className='font-semibod my-1'>Sound Operator</p>
+ <p className='font-semibod my-1'>Set Decoration & Lighting</p>
  </div>
 
 </div>
