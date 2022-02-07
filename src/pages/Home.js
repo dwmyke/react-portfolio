@@ -6,6 +6,7 @@ import videoProductionAnimation from '../lottie/video-production.json'
 import editorAnimation from '../lottie/editor.json'
 import graphicAnimation from '../lottie/graphic.json'
 import techAnimation from '../lottie/technical.json'
+import blobAnimation from '../lottie/blob.json'
 import {
   MdVideoSettings,
   MdVideoCameraBack,
@@ -213,6 +214,20 @@ function Home() {
 </div>
 </div>
 
+</div>
+
+{/* About */}
+<div>
+  <h1 className='text-4xl text-gray-500 text-center'>About Mikel-Jon (Mike) West</h1>
+  <div className='h-screen relative'>
+    <div className='h-full'>
+      <Lottie className='h-full' animationData={blobAnimation} loop='true' />
+    </div>
+    <div className='absolute inset-0 flex flex-col items-center justify-center text-center'>
+      <p className='text-xl md:text-sm my-5 font-robo max-w-lg'>Mike West grew up in Albuquerque, New Mexico where he received his Bachelor of Fine Arts degree from the University of New Mexico and Film Crew Technician training. Mike worked as crew for major motion picture studios, independent filmmakers, and live broadcast television. He was a Promotions Video Editor, Master Control Operator, and hired background talent for network television and motion picture studios before starting his own production company, "Mega Ultra Studios" in 2012.</p>
+      <p className='text-xl md:text-sm my-5 font-robo max-w-lg'>Mike West moved to Portland, Oregon and worked for several years in IT support for Nike World Headquarters. He now lives in the Seattle, Washington and is looking to put his skills and experience to work for you on your next project. </p>
+    </div>
+  </div>
 </div>
 
 
