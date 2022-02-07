@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import Lottie from "lottie-react";
 import designerAnimation from '../lottie/designer.json'
 import videoProductionAnimation from '../lottie/video-production.json'
+import editorAnimation from '../lottie/editor.json'
 import {
   MdVideoSettings,
   MdVideoCameraBack,
@@ -39,7 +40,8 @@ function Home() {
             {/* Skills */}
 
               <div className='mt-20'>
-                  <h1 className='text-4xl text-blue-400 font-bold text-center my-10'>Mad Skills</h1>
+                  <h1 className='text-4xl text-blue-400 font-bold text-center mt-10 mb-5'>Mad Skills</h1>
+                  <h2 className='text-2xl text-blue-600 font-semibold text-center'>What I can do for you</h2>
                 <div className='grid md:grid-cols-1 grid-cols-4'>
                   <MdVideoCameraBack size={82} color='blue' className='w-full text-center mt-16'/>
                   <MdVideoSettings size={82} color='red' className='w-full text-center mt-16 animate-bounce'/>
@@ -62,9 +64,58 @@ function Home() {
                 <Lottie className="h-full" animationData={videoProductionAnimation} loop='true'/>
                 </div>
 
-                <p className='text-xl my-5 font-semibold md:px-5 px-14 py-10'>
-                  I create short and feature length films, music videos, and promotional packages for performing artists and small business
+                <p className='text-xl my-5 md:px-5 px-14 py-10'>
+                  I create short and feature length films, music videos, and promotional packages for performing artists and small business from pre-production screenwriting and previsualization, to all aspects of production, to post-production distributions.
                 </p>
+              </div>
+
+              </div>
+
+              {/* Video Editor */}
+
+              <div className='my-20'>
+
+                <div className='text-center h-52 bg-red-400'>
+                  <h1 className='text-white font-bold text-4xl py-10'>Video Editor</h1>
+                </div>
+
+                <div className='md:mx-5 mx-32 shadow-2xl bg-gray-50 -mt-20 rounded-xl hover:bg-yellow-400'>
+                <div className='h-96'>
+                <Lottie className="h-full" animationData={editorAnimation} loop='true'/>
+                </div>
+
+               <div className='grid md:grid-cols-1 grid-cols-3 p-12 mx-5'>
+
+                 <div className='text-left'>
+                 <h1 className='text-xl font-bold my-2'>Software Used</h1>
+                 <hr />
+                 <p className='font-semibod my-1'>DaVinci Resolve</p>
+                 <p className='font-semibod my-1'>Adobe Premiere Pro</p>
+                 <p className='font-semibod my-1'>Adobe After Effects</p>
+                 <p className='font-semibod my-1'>Adobe Audition</p>
+                 <p className='font-semibod my-1'>Final Cut</p>
+                 </div>
+
+                 <div className='text-center'>
+                 <h1 className='text-xl font-bold my-2'>Techniques</h1>
+                 <hr />
+                 <p className='font-semibod my-1'>Multicamera</p>
+                 <p className='font-semibod my-1'>Motion Graphics & Titles</p>
+                 <p className='font-semibod my-1'>Color Correction</p>
+                 <p className='font-semibod my-1'>Sound Mixing</p>
+                 <p className='font-semibod my-1'>Special Effects</p>
+                 </div>
+
+                 <div className='text-right'>
+                 <h1 className='text-xl font-bold my-2'>Formats</h1>
+                 <hr />
+                 <p className='font-semibod my-1'>Theatrical</p>
+                 <p className='font-semibod my-1'>DVD & Blu-Ray</p>
+                 <p className='font-semibod my-1'>Social Media</p>
+                 <p className='font-semibod my-1'>Broadcast Television</p>
+                 </div>
+
+               </div>
               </div>
 
               </div>
