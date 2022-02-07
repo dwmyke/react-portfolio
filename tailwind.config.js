@@ -5,7 +5,8 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        theme : '#2A2A2A'
+        theme : '#2A2A2A',
+        primary: '#5ABCB9'
       },
       fontFamily : {
         robo : ['Roboto', 'sans-serif'],

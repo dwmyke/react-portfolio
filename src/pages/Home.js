@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import Lottie from "lottie-react";
 import designerAnimation from '../lottie/designer.json'
+import videoProductionAnimation from '../lottie/video-production.json'
 import {
   MdVideoSettings,
   MdVideoCameraBack,
@@ -45,6 +46,26 @@ function Home() {
                   <MdPhotoSizeSelectLarge size={82} color='orange' className='w-full text-center mt-16'/>
                   <GrCloudComputer size={82} color='green' className='w-full text-center mt-16 animate-pulse'/>
                 </div>
+
+              </div>
+
+              {/* Content Creator */}
+
+              <div className='my-20'>
+
+                <div className='text-center h-52 bg-primary'>
+                  <h1 className='text-white font-bold text-4xl py-10'>Content Creator</h1>
+                </div>
+
+                <div className='md:mx-5 mx-32 shadow-2xl bg-gray-50 -mt-20 rounded-xl hover:bg-blue-500 hover:text-white'>
+                <div className='h-96'>
+                <Lottie className="h-full" animationData={videoProductionAnimation} loop='true'/>
+                </div>
+
+                <p className='text-xl my-5 font-semibold md:px-5 px-14 py-10'>
+                  I create short and feature length films, music videos, and promotional packages for performing artists and small business
+                </p>
+              </div>
 
               </div>
 
