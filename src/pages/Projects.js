@@ -3,6 +3,10 @@ import Layout from '../components/Layout';
 import Lottie from "lottie-react";
 import designerAnimation from '../lottie/designer.json';
 import projectsData from '../resources/projects';
+import AOS from 'aos';
+AOS.init({
+  duration:1000
+});
 
 function Projects() {
   return (
@@ -31,13 +35,13 @@ function Projects() {
         <h1 className="text-4xl text-center font-bold mt-5">Because</h1>
       </div> */}
       <div className="font-bold text-center bg-gray-500 m-20 p-20 text-white rounded-tl-full rounded-br-full md:mx-5">
-        <h1 className="text-8xl md:text-3xl">Many Projects</h1>
+        <h1 className="text-8xl md:text-3xl" data-aos='slide-right'>Many Projects</h1>
       </div>
 
       <div className="grid mt-20 md:grid-cols-1 grid-cols-3 items-center justify-center gap-10 mx-20 md:mx-5">
             {projectsData.map((project=>{
               return <div>
-                  <div className='relative border-2 text-center rounded-tr-3xl rounded-bl-3xl border-gray-400'>
+                  <div className='relative border-2 text-center rounded-tr-3xl rounded-bl-3xl border-gray-400' data-aos='slide-left'>
                      <img src={project.image} alt={project.imageAlt} className='w-full h-60 text-center rounded-tr-3xl rounded-bl-3xl object-center object-cover'/>
 
                      <div className='absolute inset-0 flex items-center justify-center flex-col opacity-0 bg-black hover:opacity-80 rounded-tr-3xl rounded-bl-3xl'>
@@ -48,6 +52,7 @@ function Projects() {
               </div>
             }))}
       </div>
+      <div className='pb-40'></div>
     </Layout>
   );
 }

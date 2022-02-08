@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import Layout from './components/Layout';
 import {BrowserRouter , Routes, Route } from 'react-router-dom'
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Skills from './pages/Skills';
+import 'aos/dist/aos.css';
 
 function App() {
   return (

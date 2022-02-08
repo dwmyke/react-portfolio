@@ -13,6 +13,11 @@ import {
   MdPhotoSizeSelectLarge
 } from 'react-icons/md'
 import {GrCloudComputer} from 'react-icons/gr'
+import AOS from 'aos';
+
+AOS.init({
+  duration:1000
+});
 
 function Home() {
   return (
@@ -32,8 +37,8 @@ function Home() {
 
                 <div className='font-bold text-white md:px-6'>
 
-                    <h1 className='text-6xl md:text-4xl'>Mikel-Jon <b className='text-yellow-500'>(Mike)</b> West</h1>
-                    <h1 className='text-3xl md:text-xl'>Content Creator <b className='text-red-500'>Video Editor</b> <b className='text-blue-500'>Graphic Designer</b> Technician</h1>
+                    <h1 className='text-6xl md:text-4xl' data-aos='slide-right'>Mikel-Jon <b className='text-yellow-500'>(Mike)</b> West</h1>
+                    <h1 className='text-3xl md:text-xl' data-aos='slide-left'>Content Creator <b className='text-red-500'>Video Editor</b> <b className='text-blue-500'>Graphic Designer</b> Technician</h1>
 
                   </div>
 
@@ -42,7 +47,7 @@ function Home() {
 
             {/* Skills */}
 
-              <div className='mt-20'>
+              <div className='mt-20' aos-data='zoom-in'>
                   <h1 className='text-4xl text-blue-400 font-bold text-center mt-10 mb-5'>Mad Skills</h1>
                   <h2 className='text-2xl text-blue-600 font-semibold text-center'>What I can do for you</h2>
                 <div className='grid md:grid-cols-1 grid-cols-4'>
@@ -59,7 +64,7 @@ function Home() {
               <div className='my-20'>
 
                 <div className='text-center h-52 bg-primary'>
-                  <h1 className='text-white font-bold text-4xl py-10'>Content Creator</h1>
+                  <h1 className='text-white font-bold text-4xl py-10' aos-data='zoom-in'>Content Creator</h1>
                 </div>
 
                 <div className='md:mx-5 mx-32 shadow-2xl bg-gray-50 -mt-20 rounded-xl hover:bg-blue-500 hover:text-white'>
